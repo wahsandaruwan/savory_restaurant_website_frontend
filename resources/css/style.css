@@ -21,6 +21,11 @@ html{
 .row{
     max-width: 1140px;
     margin: 0 auto;
+    padding: 0 25px;
+}
+
+section{
+    padding: 80px 0;
 }
 
 /* ----------------------------------------------- */
@@ -42,6 +47,7 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -110%);
+    padding: 0 40px;
 }
 
 h1{
@@ -122,4 +128,76 @@ h1{
 .main-nav li a:active{
     border-bottom: 1px solid #e67e22;
     padding-bottom: 5px;
+}
+
+/* ----------------------------------------------- */
+/* For Features Section */
+/* ----------------------------------------------- */
+/* -----Title----- */
+h2{
+    position: relative;
+    font-size: 180%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+h2::before{
+    content: '';
+    position: absolute;
+    background: #e67e22;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 3px;
+}
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    text-align: center;
+    margin: 40px auto 10px auto;
+}
+
+/* ------Grids----- */
+.box{
+    padding: 1%;
+    text-align: center;
+    height: 350px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 110%;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+    transition: all 0.3s ease-in;
+}
+
+.icon-big{
+    font-size: 320%;
+    display: block;
+    color: #e67e22;
+    margin: 20px 0;
+    transition: all 0.3s ease-in;
+}
+
+.box:hover{
+    background: #e67e22;
+}
+
+.box:hover > *{
+    color: #fff;
 }
