@@ -1,11 +1,15 @@
-/* Reset */
+/* ----------------------------------------------- */
+/* For Reset Doc */
+/* ----------------------------------------------- */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Whole Doc */
+/* ----------------------------------------------- */
+/* For Whole Doc */
+/* ----------------------------------------------- */
 html{
     background-color: #fff;
     color: #555;
@@ -19,7 +23,11 @@ html{
     margin: 0 auto;
 }
 
-/* Header */
+/* ----------------------------------------------- */
+/* For Header */
+/* ----------------------------------------------- */
+/* -----Hero----- */
+/* Image Background */
 header{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/back.jpg) no-repeat;
     background-size: cover;
@@ -27,12 +35,13 @@ header{
     height: 100vh;
 }
 
+/* Text */
 .hero-text-box{
     position: relative;
     width: 1140px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -110%);
 }
 
 h1{
@@ -45,6 +54,7 @@ h1{
     word-spacing: 3px;
 }
 
+/* Buttons */
 .btn:link,
 .btn:visited{
     display: inline-block;
@@ -75,4 +85,41 @@ h1{
     background: #b05d14;
     color: #fff;
     border: 1px solid #b05d14;
+}
+
+/* -----Navigation----- */
+/* logo */
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+/* Menu */
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease-in;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 5px;
 }
