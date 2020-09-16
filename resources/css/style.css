@@ -167,7 +167,7 @@ h2::before{
 .box{
     padding: 1%;
     text-align: center;
-    height: 350px;
+    height: 380px;
     cursor: pointer;
     transition: all 0.3s ease-in;
 }
@@ -190,7 +190,7 @@ h3{
     font-size: 320%;
     display: block;
     color: #e67e22;
-    margin: 20px 0;
+    margin: 30px 0;
     transition: all 0.3s ease-in;
 }
 
@@ -200,4 +200,42 @@ h3{
 
 .box:hover > *{
     color: #fff;
+}
+
+/* ----------------------------------------------- */
+/* For Meals Section */
+/* ----------------------------------------------- */
+.section-meals{
+    padding: 0;
+}
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.meal-photo img{
+    opacity: 0.4;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: all 0.4s ease-in;
+}
+
+.meal-photo img:hover{
+    transform: scale(1.05);
+    opacity: 1;
 }
