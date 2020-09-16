@@ -10,6 +10,7 @@
 /* ----------------------------------------------- */
 /* For Whole Doc */
 /* ----------------------------------------------- */
+/* Root */
 html{
     background-color: #fff;
     color: #555;
@@ -18,18 +19,54 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+/* Row */
 .row{
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 25px;
 }
 
+/* For Sections */
 section{
     padding: 80px 0;
 }
 
+h2{
+    position: relative;
+    font-size: 180%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+h2::before{
+    content: '';
+    position: absolute;
+    background: #e67e22;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    width: 100px;
+    height: 3px;
+}
+
+/* Clear Floats */
+.clearfix{
+    zoom: 1;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /* ----------------------------------------------- */
-/* For Header */
+/* For Header Section */
 /* ----------------------------------------------- */
 /* -----Hero----- */
 /* Image Background */
@@ -38,15 +75,16 @@ header{
     background-size: cover;
     background-position: center;
     height: 100vh;
+    position: relative;
 }
 
 /* Text */
 .hero-text-box{
-    position: relative;
+    position: absolute;
     width: 1140px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -110%);
+    transform: translate(-50%, -50%);
     padding: 0 40px;
 }
 
@@ -106,7 +144,7 @@ h1{
 .main-nav{
     float: right;
     list-style: none;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .main-nav li{
@@ -133,29 +171,7 @@ h1{
 /* ----------------------------------------------- */
 /* For Features Section */
 /* ----------------------------------------------- */
-/* -----Title----- */
-h2{
-    position: relative;
-    font-size: 180%;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-}
-
-h2::before{
-    content: '';
-    position: absolute;
-    background: #e67e22;
-    bottom: -20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 3px;
-}
-
+/* Title Paragraph */
 .long-copy{
     line-height: 145%;
     width: 70%;
@@ -238,4 +254,90 @@ h3{
 .meal-photo img:hover{
     transform: scale(1.05);
     opacity: 1;
+}
+
+/* ----------------------------------------------- */
+/* For How it Works Section */
+/* ----------------------------------------------- */
+.section-steps{
+    background: #f4f4f4;
+}
+
+/* ------Left------ */
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+/* ------Right------ */
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen{
+    width: 40%;
+}
+
+.work-step{
+    margin-bottom: 50px;
+}
+
+/* Numbers */
+.work-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    margin-right: 25px;
+    float: left;
+}
+
+/* App Buttons */
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* ----------------------------------------------- */
+/* For Cities Section */
+/* ----------------------------------------------- */
+.cbox{
+    margin-top: 30px;
+}
+
+.cbox img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature{
+    margin-bottom: 5px;
+}
+
+.city-feature a:link,
+.city-feature a:visited{
+    text-decoration: none;
+    color: #e67e22;
+    transition: all 0.3s ease-in;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 90%;
+}
+
+.city-feature a:hover,
+.city-feature a:active{
+    color: #555;
 }
