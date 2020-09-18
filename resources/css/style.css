@@ -392,7 +392,7 @@ cite img{
 }
 
 .pbox{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .plan-box{
@@ -408,7 +408,7 @@ cite img{
     border-bottom: 1px solid #d3d3d3;
 }
 
-/* Top */
+/* ------Top----- */
 .plan-price{
     font-size: 200%;
     margin-bottom: 10px;
@@ -431,7 +431,7 @@ cite img{
     border-top-right-radius: 5px;
 }
 
-/* Middle */
+/* ------Middle------ */
 .plan-box ul{
     list-style: none;
 }
@@ -441,9 +441,38 @@ cite img{
     vertical-align: middle;
 }
 
-/* Bottom */
+/* -----Bottom---- */
 .plan-box div:last-child{
     text-align: center;
     border: none;
+}
+
+/* ----------------------------------------------- */
+/* For Contact Form Section */
+/* ----------------------------------------------- */
+.contact-form{
+    width: 60%;
+    margin: 30px auto 0 auto;
+    font-size: 90%;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+textarea{
+    min-height: 100px;
+    resize: vertical;
+}
+
+input[type=checkbox]{
+    margin: 5px 5px 5px 0;
 }
 
