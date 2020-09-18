@@ -112,6 +112,10 @@
         margin-bottom: 20px;
     }
 
+    .work-step:last-of-type{
+        margin-bottom: 20px;
+    }
+
     .steps-box:first-child{
         text-align: center;
     }
