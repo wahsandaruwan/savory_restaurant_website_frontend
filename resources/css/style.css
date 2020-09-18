@@ -31,6 +31,7 @@ section{
     padding: 80px 0;
 }
 
+/* Headings */
 h2{
     position: relative;
     font-size: 180%;
@@ -51,6 +52,48 @@ h2::before{
     transform: translate(-50%, -110%);
     width: 100px;
     height: 3px;
+}
+
+/* Buttons */
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: all 0.3s ease-in;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background: #e67e22;
+    color: #fff;
+    border: 1px solid #e67e22;
+    margin-right: 20px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+
+.btn:hover,
+.btn:active{
+    background: #b05d14;
+    color: #fff;
+    border: 1px solid #b05d14;
+}
+
+/* Icons */
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 90%;
 }
 
 /* Clear Floats */
@@ -98,38 +141,6 @@ h1{
     word-spacing: 3px;
 }
 
-/* Buttons */
-.btn:link,
-.btn:visited{
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    transition: all 0.3s ease-in;
-}
-
-.btn-full:link,
-.btn-full:visited{
-    background: #e67e22;
-    color: #fff;
-    border: 1px solid #e67e22;
-    margin-right: 20px;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited{
-    border: 1px solid #e67e22;
-    color: #e67e22;
-}
-
-
-.btn:hover,
-.btn:active{
-    background: #b05d14;
-    color: #fff;
-    border: 1px solid #b05d14;
-}
 
 /* -----Navigation----- */
 /* logo */
@@ -328,14 +339,6 @@ h3{
     transition: all 0.3s ease-in;
 }
 
-.icon-small{
-    display: inline-block;
-    width: 30px;
-    text-align: center;
-    color: #e67e22;
-    font-size: 90%;
-}
-
 .city-feature a:hover,
 .city-feature a:active{
     color: #555;
@@ -380,3 +383,67 @@ cite img{
     margin-right: 10px;
     vertical-align: middle;
 }
+
+/* ----------------------------------------------- */
+/* For Plans Section */
+/* ----------------------------------------------- */
+.section-plans{
+    background: #f4f4f4;
+}
+
+.pbox{
+    margin-top: 50px;
+}
+
+.plan-box{
+    background: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 5%;
+    box-shadow: 0 4px 2px #efefef;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+/* Top */
+.plan-price{
+    font-size: 200%;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #e67e22;
+}
+
+.plan-price span{
+    font-size: 30%;
+    font-weight: 400;
+}
+
+.plan-price-meal{
+    font-size: 80%;
+}
+
+.plan-box div:first-child{
+    background: #e7e7e7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Middle */
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+    vertical-align: middle;
+}
+
+/* Bottom */
+.plan-box div:last-child{
+    text-align: center;
+    border: none;
+}
+
