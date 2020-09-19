@@ -83,4 +83,21 @@ $(document).ready(function(){
     {
         offset: '40%;'
     });
+
+    // Mobile Nav
+    $('.js--nav_icon').click(function(){
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav_icon i');
+
+        nav.slideToggle(200);
+        
+        if(icon.hasClass('fa-bars')){
+            icon.addClass('fa-times');
+            icon.removeClass('fa-bars');
+        }
+        else{
+            icon.addClass('fa-bars');
+            icon.removeClass('fa-times');
+        }
+    });
 });

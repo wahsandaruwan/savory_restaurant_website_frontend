@@ -18,10 +18,6 @@
         font-size: 18px;
     }
 
-    section{
-        padding: 60px 0;
-    }
-
     /* Features Section */
     .long-copy{
         width: 80%;
@@ -77,10 +73,6 @@
         font-size: 16px;
     }
 
-    section{
-        padding: 30px 0;
-    }
-
     .col{
         width: 100%;
         margin: 0 0 4% 0;
@@ -97,6 +89,57 @@
     .section-cities .row,
     .section-plans .row{
         margin-bottom: 20px;
+    }
+
+    /* ---Navigation Bar--- */
+    .main-nav{
+        display: none;
+    }
+
+    .mobile-nav-icon{
+        display: inline-block;
+        position: relative;
+        z-index: 11;
+    }
+
+    .main-nav{
+        position: absolute;
+        top: -58px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        float: none;
+        background: #333;
+        padding: 50px 30px;
+    }
+
+    .main-nav li{
+        display: block;
+        margin: 50px 75px;
+        text-align: center;
+    }
+
+    .main-nav li a{
+        padding: 5px 10px 0 10px;
+    }
+
+    /* ----Sticky Nav Bar--- */
+    .sticky .main-nav{
+        margin-top: 50px;
+        background: #e2e2e2;
+    }
+
+    .sticky .mobile-nav-icon{
+        margin-top: 20px;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited{
+        color: #333;
+    }
+
+    .sticky .mobile-nav-icon i{
+        color: #333;
     }
 
     /* Features Section */
@@ -157,7 +200,7 @@
 @media(max-width: 480px){
     /* Whole Doc */
     html{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     section{

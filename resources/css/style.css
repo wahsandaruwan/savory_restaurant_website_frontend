@@ -189,6 +189,19 @@ h1{
     padding-bottom: 5px;
 }
 
+/* For Mobile Navigation Bar */
+.mobile-nav-icon{
+    float: right;
+    margin-top: 55px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i{
+    font-size: 200%;
+    color: #fff;
+}
+
 /* For Sticky Navigation Bar */
 .sticky{
     position: fixed;
@@ -219,7 +232,7 @@ h1{
 
 /* For Navigation Smooth Scroll */
 .active{
-    border-top: 1px solid #e67e22;   
+    font-style: italic; 
 }
 
 /* ----------------------------------------------- */
