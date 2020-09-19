@@ -164,6 +164,17 @@
         padding: 25px 0;
     }
 
+    /* Header Section */
+    .hero-text-box{
+        padding: 0 15%;
+    }
+
+    /* How it Works Section */
+    .work-step p{
+        float: right;
+        margin: 10px 0 20px 0;
+    }
+
     /* Contact Section */
     .contact-form{
         width: 100%;
