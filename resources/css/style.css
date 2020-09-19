@@ -332,6 +332,7 @@ h3{
 
 .app-screen{
     width: 40%;
+    position: relative;
 }
 
 .work-step{
@@ -588,3 +589,113 @@ footer p:last-child{
     margin-top: 20px;
 }
 
+/* ----------------------------------------------- */
+/* For Animations */
+/* ----------------------------------------------- */
+
+/* -----For Feature & Cities----- */
+.js--wp-1,
+.js--wp-3{
+    opacity: 0;
+}
+
+.anim-feature-cities{
+    animation: anfc 1s forwards ease-in;
+}
+
+@keyframes anfc{
+    to{
+        opacity: 1;
+    }
+}
+
+/* -----For Steps------- */
+.js--wp-2{
+    left: -100%;
+    opacity: 0;
+}
+
+.anim-step{
+    animation: ans 2s forwards ease-in;
+}
+
+@keyframes ans{
+    10%{
+        opacity: 1;
+        left: 2.5%;
+    }
+
+    20%{
+        left: -2%;
+    }
+
+    30%{
+        left: 2%;
+    }
+
+    40%{
+        left: -1.5%;
+    }
+
+    50%{
+        left: 1.5%;
+    }
+
+    60%{
+        left: -1%;
+    }
+
+    70%{
+        left: 1%;
+    }
+
+    80%{
+        left: -0.5%;
+    }
+
+    90%{
+        left: 0.5%;
+    }
+
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+
+/* --------For Plans------ */
+.js--wp-4{
+    opacity: 0;
+}
+
+.js--wp-5{
+    transform: scale(0.95);
+}
+
+.anim-plans-1{
+    animation: anp1 1.5s ease-in forwards;
+}
+
+.anim-plans-2{
+    animation: anp2 1.5s ease-in forwards;
+}
+
+@keyframes anp1{
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes anp2{
+    0%{
+        transform: scale(0.95);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}

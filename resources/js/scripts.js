@@ -49,4 +49,38 @@ $(document).ready(function(){
             }
         })
     });
+
+    // Animations on Scroll
+    // For Feature
+    $('.js--wp-1').waypoint(function(direction){
+        $('.js--wp-1').addClass('anim-feature-cities');
+    },
+    {
+        offset: '40%;'
+    });
+
+    // For Steps
+    $('.js--wp-2').waypoint(function(direction){
+        $('.js--wp-2').addClass('anim-step');
+    },
+    {
+        offset: '40%;'
+    });
+
+    // For Cities
+    $('.js--wp-3').waypoint(function(direction){
+        $('.js--wp-3').addClass('anim-feature-cities');
+    },
+    {
+        offset: '40%;'
+    });
+
+    // For Plans
+    $('.js--wp-5').waypoint(function(direction){
+        $('.js--wp-4').addClass('anim-plans-1');
+        $('.js--wp-5').addClass('anim-plans-2');
+    },
+    {
+        offset: '40%;'
+    });
 });
