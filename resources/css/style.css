@@ -189,7 +189,7 @@ h1{
     padding-bottom: 5px;
 }
 
-/* For Sticky Menu */
+/* For Sticky Navigation Bar */
 .sticky{
     position: fixed;
     top: 0;
@@ -215,6 +215,11 @@ h1{
 
 .sticky .logo-black{
     display: block;
+}
+
+/* For Navigation Smooth Scroll */
+.active{
+    border-top: 1px solid #e67e22;   
 }
 
 /* ----------------------------------------------- */
