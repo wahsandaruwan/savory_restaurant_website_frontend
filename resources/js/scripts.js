@@ -89,11 +89,12 @@ $(document).ready(function(){
         var nav = $('.js--main-nav');
         var icon = $('.js--nav_icon i');
 
-        nav.slideToggle(200);
+        // nav.slideToggle(200);
+        nav.toggleClass('hide');
         
         if(icon.hasClass('fa-bars')){
             icon.addClass('fa-times');
-            icon.removeClass('fa-bars');
+            icon.removeClass('fa-bars'); 
         }
         else{
             icon.addClass('fa-bars');
