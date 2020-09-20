@@ -88,9 +88,8 @@ $(document).ready(function(){
     $('.js--nav_icon').click(function(){
         var nav = $('.js--main-nav');
         var icon = $('.js--nav_icon i');
-
-        // nav.slideToggle(200);
-        nav.toggleClass('hide');
+        
+        nav.toggleClass('hide'); 
         
         if(icon.hasClass('fa-bars')){
             icon.addClass('fa-times');
